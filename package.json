@@ -23,7 +23,9 @@
     "url": "https://github.com/GabrielFernella/clean-node-api/issues"
   },
   "standard": {
-    "env": ["jest"]
+    "env": [
+      "jest"
+    ]
   },
   "homepage": "https://github.com/GabrielFernella/clean-node-api#readme",
   "devDependencies": {
@@ -34,6 +36,7 @@
     "standard": "^17.0.0"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "validator": "^13.7.0"
   }
 }

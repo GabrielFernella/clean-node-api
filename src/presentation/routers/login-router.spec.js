@@ -1,5 +1,6 @@
-const MissingParamError = require('../helpers/missing-param-error')
-const ServerError = require('../helpers/server-error')
+const { ServerError } = require('../errors')
+const { MissingParamError } = require('../../utils/errors')
+
 // const invalidParamError = require('../helpers/invalid-param-error')
 
 const LoginRouter = require('./login-router')
