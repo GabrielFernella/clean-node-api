@@ -1,4 +1,5 @@
 const EmailValidator = require('./email-validator')
+const MissingParamError = require('../errors/missing-param-error')
 const validator = require('validator')
 
 const makeSut = () => {
@@ -26,5 +27,11 @@ describe('Email validator', () => {
     sut.isValid('valid_email@gmail.com')
 
     expect(validator.email).toBe('valid_email@gmail.com')
+  })
+
+  test('Should throw if no email is proveided', async () => {
+    const sut = makeSut()
+    // quando estiver testando uma função não asyncrona, vc deve direcionar o ponteiro, ao invés de sut.isValid(), seria sut.isValid
+    expect(() => sut.isValid()).toThrow(new MissingParamError('email'))
   })
 })

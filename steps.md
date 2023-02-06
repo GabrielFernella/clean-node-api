@@ -4,6 +4,8 @@
 3. npm i husky -D
 4. npm i jest -D
 5. npm i validator
+6. npm i bcrypt
+7. npm i jsonwebtoken
 
 
 # Commands
