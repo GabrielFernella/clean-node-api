@@ -6,6 +6,7 @@
 5. npm i validator
 6. npm i bcrypt
 7. npm i jsonwebtoken
+8. npm i mongodb
 
 
 # Commands
