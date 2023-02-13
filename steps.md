@@ -7,6 +7,7 @@
 6. npm i bcrypt
 7. npm i jsonwebtoken
 8. npm i mongodb
+9. npm i @shelf/jest-mongodb -D
 
 
 # Commands
